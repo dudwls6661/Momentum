@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  	width: 100vw;
+  	height: 100vh;
+  	color: floralwhite;
+  	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+	font-family: 'Noto Sans KR', sans-serif;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+header #date{
+	padding-left: 30px;
+	padding-top: 30px;
+	font-size: min(20px,4vw);
+	color: #fff;
+	line-height: 40px;
+	animation-name: fade;
+	animation-duration: 1.2s;
+}
+
+
+header #weather{
+	padding-right: 30px;
+	padding-top: 20px;
+	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	cursor: pointer;
+	font-size: min(20px,4vw);
+}
+#weather li:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+header #weather li:last-child{
+	float: right;
+}
+
+main{
+	max-height: 50vh;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	animation-name: move, fade;
+	animation-duration: 1.2s;
+}
+
+main #clock{
+	text-align: center;
+	font-size: min(130px,16vw);
+	font-weight: 500;
+	animation-name: fade;
+	animation-duration: 1.2s;
+}
+@keyframes fade {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes move {
+	from{
+		left: 45%;
+	}
+	to{
+		left: 50%;
+	}
+}
+main #login-form{
+	margin-bottom: 20px;
+	text-align: center;
+}
+main #login-form input[type="text"]{
+	width: 72%;
+	font-size: min(40px,4vw);
+	text-align: center;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid floralwhite;
+	outline: none;
+}
+
+main #LI{
+	width: 80px;
+	height: 38px;
+	background-color: transparent;
+	outline: none;
+	border: 2px solid floralwhite;
+	border-radius: 5px;
+	color: floralwhite;
+	font-size: min(20px,3vw);
+	font-weight: 600;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+main #LI:hover{
+	transition: all 0.7s;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+input[type="text"]::placeholder{
+	color: floralwhite;
+}
+
+main #greeting{
+	font-size: min(40px,6vw);
+	text-align: center;
+}
+
+main #todo-form{
+	width: 100%;
+	margin-top: 10px;
+	border-bottom: 2px solid floralwhite;
+
+}
+main #todo-form input[type="text"]{ 
+	width: 100%;
+	font-size: min(40px,4vw);
+	text-align: center;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+main #todo-list{
+	width: 100%;
+	height: 125px;
+	overflow-y: scroll;
+}
+main #todo-list::-webkit-scrollbar{
+	display: none;
+}
+main #todo-list li{
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: min(20px,4vw);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+main #todo-list li:hover{
+	transition: all 0.7s;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+main #todo-list li:first-child{
+	margin-top: 10px;
+}
+main #todo-list li button{
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	border-radius: 5px;
+}
+main #todo-list li button:hover{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+footer #quote{
+	width: 100%;
+	font-size: min(20px,3vw);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 30px;
+	text-align: center;
+	animation-name: fade;
+	animation-duration: 1.2s;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+
+}
+@media screen and (min-width:540px) and (max-width:766px) {
+	main{
+		margin-top: 30px;
+	}
+	main #todo-list{
+		height: 120px;
+	}
+	main #LI{
+		width: 70px;
+		height: 32px;
+	}
+}
+@media screen and (max-width:540px){
+	main{
+		margin-top: 60px;
+	}
+	main #todo-list{
+		height: 120px;
+	}
+	main #LI{
+		width: 60px;
+		height: 28px;
+	}
+	#weather img{
+		width: 40px;
+		height: 40px;
+	}
+	header #date{
+		padding-top: 15px;
+	}
+}
