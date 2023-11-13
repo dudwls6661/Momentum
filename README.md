@@ -4,8 +4,7 @@ Date : 2023.10 ~ 2023.11<br>
 Tool : html, Javascript, CSS
 
 #
-
-
+<br>
 todo.js
 
 <ul>
@@ -39,7 +38,7 @@ clock.js
   <li>Date 객체를 사용해서 시간 정보를 표현</li>
   <li>setInterval기능으로 일정주기, 일정시간으로 실행되는 타이머 설정</li>
 </ul>
-
+<br>
 
 # 추가구현
 
