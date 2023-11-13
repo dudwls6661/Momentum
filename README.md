@@ -39,7 +39,6 @@ clock.js
   <li>setInterval기능으로 일정주기, 일정시간으로 실행되는 타이머 설정</li>
 </ul>
 <br>
-
 # 추가구현
 
 <ul>
