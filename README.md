@@ -33,6 +33,13 @@ background.js + quotes.js
 clock.js
 
 <ul>
-  <li>Date 객체를 사용해서 날짜, 시간 관련 정보를 표현</li>
+  <li>Date 객체를 사용해서 시간 정보를 표현</li>
   <li>setInterval기능으로 일정주기, 일정시간으로 실행되는 타이머 설정</li>
+</ul>
+#추가구현
+<ul>
+  <li>반응형</li>
+  <li>Date 객체를 사용해 날짜 정보 표현</li>
+  <li>애니메이션 활용</li>
+  <li>날씨 상태에 맞는 아이콘로딩</li>
 </ul>
