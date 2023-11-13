@@ -2,7 +2,6 @@
 
 Date : 2023.10 ~ 2023.11
 Tool : html, Javascript, CSS
-
 #
 
 todo.js
